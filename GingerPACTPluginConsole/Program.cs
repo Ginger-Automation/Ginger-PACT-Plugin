@@ -17,7 +17,14 @@ namespace GingerPACTPluginConsole
             //GingerNodeStarter.StartNode(new PACTService(), "PACT Service 1");
             using (GingerNodeStarter gingerNodeStarter = new GingerNodeStarter())
             {
-                gingerNodeStarter.StartNode("PACT Service 1", new PACTService());
+                if (args.Length > 0)
+                {
+                    gingerNodeStarter.StartFromConfigFile(args[0]);
+                }
+                else
+                {
+                    gingerNodeStarter.StartNode("PACT Service 1", new PACTService());
+                }
                 gingerNodeStarter.Listen();
             }
 
