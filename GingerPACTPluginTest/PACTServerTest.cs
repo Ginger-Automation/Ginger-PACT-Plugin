@@ -26,8 +26,7 @@ namespace GingerPACTPluginTest
         }
 
         [TestMethod]
-        public void LoadInteractionsFile()
-        {
+        public void LoadInteractionsFile()      {
             //Arrange
             PACTService service = new PACTService();
             GingerAction GA = new GingerAction();

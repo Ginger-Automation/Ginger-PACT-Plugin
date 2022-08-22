@@ -1,4 +1,4 @@
-#region License
+﻿#region License
 /*
 Copyright © 2014-2018 European Support Limited
 
@@ -19,7 +19,7 @@ limitations under the License.
 using Newtonsoft.Json;
 using System;
 
-namespace Ginger_PACT_Plugin
+namespace GingerPACTPluginCommon
 {
     class CustomJsonConverter : JsonConverter
     {

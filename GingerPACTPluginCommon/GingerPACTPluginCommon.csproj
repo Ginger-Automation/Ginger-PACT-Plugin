@@ -1,20 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\JavaTemplate.txt" />
-    <None Remove="Resources\NewInteractionTemplate.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\JavaTemplate.txt" />
-    <EmbeddedResource Include="Resources\NewInteractionTemplate.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
     <PackageReference Include="PactNet" Version="2.4.6" />
   </ItemGroup>
 

@@ -19,6 +19,7 @@ limitations under the License.
 using Amdocs.Ginger.Plugin.Core;
 using Ginger_PACT_Plugin;
 using Ginger_PACT_Plugin.PACTEditorTools;
+using GingerPACTPluginCommon;
 using GingerPACTPluginUI.PACTTextEditorLib;
 using Newtonsoft.Json.Linq;
 using PactNet.Mocks.MockHttpService.Models;

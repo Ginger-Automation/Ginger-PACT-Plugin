@@ -4,12 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ginger_PACT_Plugin
+namespace GingerPACTPluginCommon
 {
-        public class ProviderServicePactFile 
-        {
-            [JsonProperty(PropertyName = "interactions")]
-            public IEnumerable<ProviderServiceInteraction> Interactions { get; set; }
-        }
-
+    public class ProviderServicePactFile
+    {
+        [JsonProperty(PropertyName = "interactions")]
+        public IEnumerable<ProviderServiceInteraction> Interactions { get; set; }
+    }
 }

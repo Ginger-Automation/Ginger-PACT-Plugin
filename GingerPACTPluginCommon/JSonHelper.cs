@@ -1,4 +1,4 @@
-#region License
+﻿#region License
 /*
 Copyright © 2014-2018 European Support Limited
 
@@ -20,7 +20,7 @@ using Newtonsoft.Json;
 using System;
 using System.IO;
 
-namespace Ginger_PACT_Plugin
+namespace GingerPACTPluginCommon
 {
     public class JSonHelper
     {

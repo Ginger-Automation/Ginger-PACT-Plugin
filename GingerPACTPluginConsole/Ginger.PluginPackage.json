@@ -1,6 +1,6 @@
 {
   "Id": "PACT",
-  "Version": "v1.9",
+  "Version": "v2.1",
   "ProjectUrl": "https://github.com/Ginger-Automation/Ginger-PACT-Plugin",
   "Description": "PACT",
   "Summary": "PACT plugin allows to simulate Web Services Server for API contract testing",

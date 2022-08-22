@@ -1,12 +1,13 @@
 ﻿using Amdocs.Ginger.Plugin.Core;
 using Amdocs.Ginger.Plugin.Core.ActionsLib;
+using GingerPACTPluginCommon;
 using System;
 using System.IO;
 
 namespace Ginger_PACT_Plugin
 {
     [GingerService("PACT", "PACT Server")]
-    public class PACTService 
+    public class PACTService
     {
         // Need to be here or in json !!!??
         // public override string Name { get { return "PACTService"; } }
@@ -34,12 +35,12 @@ namespace Ginger_PACT_Plugin
                 GA.AddExInfo("PACT Mock Server Started on port: " + port + " " + SV.MockProviderServiceBaseUri);
                 Console.WriteLine("PACT Server started");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 GA.AddError("Error starting PACT Mock Server: " + ex.Message);
                 Console.WriteLine("Error starting PACT Mock Server: " + ex.Message);
             }
-            
+
         }
 
 
@@ -54,7 +55,7 @@ namespace Ginger_PACT_Plugin
             GA.AddExInfo("PACT Mock Server Stopped");
         }
 
-        [GingerAction("LoadInteractionsFile", "Load Interactions File")]        
+        [GingerAction("LoadInteractionsFile", "Load Interactions File")]
         public void LoadInteractionsFile(IGingerAction GA, string fileName)
         {
             if (SV == null)
@@ -62,7 +63,7 @@ namespace Ginger_PACT_Plugin
                 GA.AddError("Service Virtualization not started yet");
                 return;
             }
-            
+
             if (File.Exists(fileName))
             {
                 try
@@ -72,7 +73,7 @@ namespace Ginger_PACT_Plugin
                     GA.AddOutput("Interactions file", fileName + "");
                     GA.AddOutput("Interactions count", count + "");
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     GA.AddError("Error when loading interaction file: " + fileName + " " + ex.Message);
                 }
@@ -108,7 +109,7 @@ namespace Ginger_PACT_Plugin
 
             // Act
             SV.ClearInteractions();
-            
+
             //ExInfo
             GA.AddExInfo("Interactions cleared");
         }

@@ -22,7 +22,7 @@
 //            // textEditor.TextHandler.InsertText("Exported to Java test");
 //            // textEditor.TextHandler.ShowMessage(MessageType.Info, "Exported!");
 
-            
+
 
 //            PACTEditor2 editor = (PACTEditor2)textEditor;
 //            editor.Compile();
